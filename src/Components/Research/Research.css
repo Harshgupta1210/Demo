@@ -1,0 +1,70 @@
+/* Container styling */
+.container_1 {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  .description_1 {
+	font-size: 1.2rem;
+	line-height: 1.6;
+	margin-bottom: 20px;
+  }
+  
+  .description_1 em {
+	font-style: italic;
+  }
+  
+  .description_1 a {
+	color: blue;
+	text-decoration: underline;
+  }
+  
+  .grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+  }
+  
+  .grid-item {
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .grid-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+  }
+  
+  .overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 10px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+  }
+  
+  .grid-item:hover .overlay {
+	opacity: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+	.grid {
+	  grid-template-columns: 1fr;
+	}
+  
+	.overlay {
+	  font-size: 1rem;
+	}
+  }
+  

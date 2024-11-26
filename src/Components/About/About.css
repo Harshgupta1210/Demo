@@ -1,0 +1,128 @@
+/* Container styling */
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	padding: 20px;
+  }
+  
+  /* Header styling */
+  .header h1 {
+	font-size: 2.5rem;
+	color: #ffffff;
+  }
+  
+  /* Image banner styling */
+  .image-banner {
+	position: relative;
+	margin-top: 20px;
+  }
+  
+  .banner-image {
+	width: 100%;
+	height: auto;
+	max-height: 400px;
+	object-fit: cover;
+  }
+  
+  /* Description text styling */
+  .description {
+	margin-top: 30px;
+	font-weight: 400;
+  }
+  
+  .description p {
+	font-size: 1.1rem;
+	color: #ffffff;
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  /* Responsive design */
+  
+  /* For screens 1024px and below */
+  @media (max-width: 1024px) {
+	.header h1 {
+	  font-size: 2rem;
+	}
+  
+	.banner-image {
+	  max-height: 300px;
+	}
+  
+	.description p {
+	  font-size: 1rem;
+	}
+  }
+  
+  /* For screens 768px and below */
+  @media (max-width: 768px) {
+	.header h1 {
+	  font-size: 1.8rem;
+	}
+  
+	.banner-image {
+	  max-height: 250px;
+	}
+  
+	.description p {
+	  font-size: 1rem;
+	}
+  }
+  
+  /* For screens 480px and below */
+  @media (max-width: 480px) {
+	.header h1 {
+	  font-size: 1.5rem;
+	}
+  
+	.banner-image {
+	  max-height: 200px;
+	}
+  
+	.description p {
+	  font-size: 0.9rem;
+	}
+  }
+  
+  /* For larger screens 1440px */
+  @media (min-width: 1440px) {
+	.container {
+	  max-width: 90%;
+	  padding: 30px;
+	}
+  
+	.header h1 {
+	  font-size: 3rem;
+	}
+  
+	.banner-image {
+	  max-height: 500px;
+	}
+  
+	.description p {
+	  font-size: 1.2rem;
+	}
+  }
+  
+  /* For ultra-large screens 2560px */
+  @media (min-width: 2560px) {
+	.container {
+	  max-width: 80%;
+	  padding: 40px;
+	}
+  
+	.header h1 {
+	  font-size: 3.5rem;
+	}
+  
+	.banner-image {
+	  max-height: 600px;
+	}
+  
+	.description p {
+	  font-size: 1.4rem;
+	}
+  }
+  

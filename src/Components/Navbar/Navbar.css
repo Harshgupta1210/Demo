@@ -1,0 +1,57 @@
+.header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px; /* Add space between h1 and nav */
+  }
+
+.navbar {
+	z-index: 100;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    margin: 30px 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+	
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+	color: black;
+  }
+
+  @media (max-width: 768px){
+	.header h1 {
+		font-size: 1.8rem;
+	  }
+
+	.navbar a {
+		margin: 0 10px;
+		font-size: 0.9rem;
+	  }
+  }
+
+  @media (max-width: 480px){
+	.header h1 {
+		font-size: 1.5rem;
+	  }
+	
+	.navbar {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	  }
+	
+	  .navbar a {
+		margin: 5px 0;
+	  }
+  }
